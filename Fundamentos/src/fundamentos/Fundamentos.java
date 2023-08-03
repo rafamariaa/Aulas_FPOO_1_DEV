@@ -20,7 +20,7 @@ public class Fundamentos {
     double mediaf = Double.parseDouble("5.5");
     boolean aprovado = Boolean.parseBoolean("true");
     
-        System.out.println("Teste");
+    
     }
     
 }
