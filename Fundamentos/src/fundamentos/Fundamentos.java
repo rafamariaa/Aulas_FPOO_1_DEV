@@ -19,6 +19,8 @@ public class Fundamentos {
     int nota1 = Integer.parseInt("8");
     double mediaf = Double.parseDouble("5.5");
     boolean aprovado = Boolean.parseBoolean("true");
+    
+        System.out.println("Teste");
     }
     
 }
