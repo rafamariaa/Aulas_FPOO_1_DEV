@@ -1,5 +1,5 @@
 
-package atividade08;
+package atividades;
 
 
 public class Numeros {

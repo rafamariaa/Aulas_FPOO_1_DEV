@@ -1,5 +1,7 @@
+package atividades;
 
-package atividade03;
+
+
 
 import java.util.Scanner;
 
