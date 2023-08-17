@@ -8,10 +8,20 @@ package enumeracao.atividade01;
  *
  * @author Aluno
  */
-public class EnumeracaoMeses {
-    public static void main(String[] args) {
-        QualMes meses = new QualMes(MesesDoAno1.ABRIL);
-        System.out.println( meses);
+public enum QualRede {
+    INSTAGRAM("Instagram"),
+    WHATSAPP("Whats App"),
+    TWITTER ("Twitter");
+    
+    private String status;
+
+    private QualRede(String status) {
+        this.status = status;
     }
+
+    public String getStatus() {
+        return status;
+    }
+    
     
 }

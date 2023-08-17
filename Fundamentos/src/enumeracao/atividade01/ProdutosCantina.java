@@ -8,20 +8,25 @@ package enumeracao.atividade01;
  *
  * @author Aluno
  */
-public class QualMes {
+public enum ProdutosCantina {
+    PRODUTO1("Sal"), 
+    PRODUTO2("Açucar"), 
+    PRODUTO3("Hamburguer"), 
+    PRODUTO4("Coca-Cola"), 
+    PRODUTO5("Guaraná"), 
+    PRODUTO6("Salgadinho"),
+    PRODUTO7("Coxinha"),
+    PRODUTO8("Suco");
     
     private String status;
 
-    public QualMes(String status) {
+    private ProdutosCantina(String status) {
         this.status = status;
     }
 
-    @Override
-    public String toString() {
-        return "QualMes{" + "status=" + status + '}';
+    public String getStatus() {
+        return status;
     }
-
-    
     
     
     

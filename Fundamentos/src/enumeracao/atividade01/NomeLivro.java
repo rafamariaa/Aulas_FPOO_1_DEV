@@ -8,20 +8,22 @@ package enumeracao.atividade01;
  *
  * @author Aluno
  */
-public class QualMes {
-    
+public enum NomeLivro {
+     LIVRO1("Chapeuzinho vermelho"),
+     LIVRO2("Cinderela"),
+     LIVRO3("Branca de neve e os 7 anões"),
+     LIVRO4("Pinoquio"), 
+     LIVRO5("Bela e a fera");
+     
     private String status;
 
-    public QualMes(String status) {
+    private NomeLivro(String status) {
         this.status = status;
     }
 
-    @Override
-    public String toString() {
-        return "QualMes{" + "status=" + status + '}';
+    public String getStatus() {
+        return status;
     }
-
-    
     
     
     
