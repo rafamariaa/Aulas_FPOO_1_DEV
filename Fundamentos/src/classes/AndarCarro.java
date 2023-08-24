@@ -10,8 +10,9 @@ package classes;
  */
 public class AndarCarro {
     public static void main(String[] args) {
-        Carro carro01 = new Carro("Corsa", "Chevrolet", "preto", 2014, 4);
+        Carro carro01 = new Carro("corsa", "chevrolet", CorEnum.ROXO, 1, true, 2014, 4);
         carro01.andar(10);
+        carro01.trocarDeMarcha(MarchaEnum.QUARTA_MARCHA);
         System.out.println(carro01);
     }
     
