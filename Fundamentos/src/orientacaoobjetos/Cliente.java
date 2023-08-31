@@ -1,6 +1,6 @@
 package orientacaoobjetos;
 
-public class Cliente implements AluguelFilme{
+public class Cliente implements AluguelFilme, CadastroCliente{
     private String nome;
     private String email;
 
@@ -49,5 +49,30 @@ public class Cliente implements AluguelFilme{
      */
     public double calcularlocacao(int qtdeDias, boolean lancamento){
         return qtdeDias * VALOR_FILME_LANCAMENTO;
+    }
+
+    @Override
+    public boolean validarNome(String nome) {
+        if (nome.length() > 7) {
+            System.out.println("Nome" + nome + "do cliente é valido");
+            return true;
+        } else {
+             System.out.println("Nome" + nome + "do cliente é invalido");
+            return false;
+        }
+    }
+
+    @Override
+    public boolean verificarEmailDominioGoogle(String email) {
+        if (email == null) {
+            return false;
+        }
+        if (email.contains("@gmail.com")) {
+            System.out.println("O email" + email + "é do Google");
+            return true;
+        } else {
+            System.out.println("O email" + email + "não é do Google");
+            return false;
+        }
     }
 }
